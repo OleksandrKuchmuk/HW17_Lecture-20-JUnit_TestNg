@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "MyFirstSuite" parallel="methods" thread-count="6">
+    <test name = "MyFirstTest">
+        <parameter name = "int1" value="43"/>
+        <parameter name = "int2" value="143"/>
+        <parameter name = "int3" value="257"/>
+        <classes>
+            <class name = "com.cursor.test.CalculatorTestA"/>
+            <class name = "com.cursor.test.CalculatorTestB"/>
+        </classes>
+
+    </test>
+</suite>
